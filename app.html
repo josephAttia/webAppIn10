@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	<link rel="stylesheet" href="app.css">
+	<title>App</title>
+</head>
+<body>
+	<div class="transition"></div>
+	<div class="mainTitle">
+		<img src="water.png" class="imgL">
+		<h1>Calculate THE WATER!</h1>
+		<img src="water.png" class="imgR">	
+		
+
+	</div>
+	<div class="userInput">
+		<h1>Weight(Pounds)</h1>
+	<input type="text" name="weight" id="weight">
+	<h1>You Need</h1>
+	<h1 id="res">0</h1>
+	<h1>Ounces</h1>
+	</div>
+	
+
+	<button class="calculate" onclick="calculate()">
+		Calculate
+	</button>
+
+<script type="text/javascript">
+	function calculate(){
+		let weight = document.getElementById('weight').value
+  		let result = ''
+  		result = weight * 0.6;
+  		document.getElementById("res").innerHTML = result;
+  		console.log(result);
+}
+
+
+
+</script>
+
+</body>
+</html>
